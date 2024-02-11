@@ -26,7 +26,7 @@ print(f"using {device}")
 
 # -----------------------------------------------------
 # source file path - set this to valid text file path to train on the rest should work
-data_file_name = 'data/shakespeare.txt'                     # 1mb file is ~15 minutes to train
+data_file_name = 'shakespeare.txt'                     # 1mb file is ~15 minutes to train
 model_name = data_file_name.split('/')[-1].split('.')[0]    # -> 'shakespeare' for model name
 
 # -----------------------------------------------------
