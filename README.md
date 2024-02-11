@@ -3,9 +3,9 @@
 
 Andrej Karpathy's "makemore" code. 
 
-The 'gpt-tiny.py' script and a text file are all you need to train a tiny gpt that will output text very roughly in the style of the text it was trained on.
+The 'gpt-tiny.py' script and a text file are all you need to make a tiny gpt that will output text very roughly in the style of the text it was trained on.
 
-Running the script will train a tiny transformer, save the weights, then generate some output. Default configuration is to train from the shakespeare.txt in the same directory. Just change the filename in the top of the script to use a different file.
+Running the script will train a tiny transformer, save the weights, then generate some output. Default configuration is to train from shakespeare.txt in the same directory. Just change the filename in the top of the script to use a different file.
 
 The script is laid out in a straightforward way that goes through each stage of the process sequentially in very simple python. The simpler stuff in the code is documented clearly, so changing the source file etc is super easy even if you don't know much python.
 
@@ -44,12 +44,13 @@ Python 3.6+
 - torch
 - tqdm
 
+```
 pip install torch
 pip install tqdm
-
+```
 Should run on pretty much any computer, will revert to cpu if no cuda is found.
 
-~6gb vram
+~6gb vram  
 ~15 minutes
 
 As configured on a low/medium grade consumer gpu to train on the 1mb shakespeare file.
